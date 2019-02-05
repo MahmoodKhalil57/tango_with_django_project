@@ -1,0 +1,15 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+About
+{% endblock %}
+{% block body_block %}
+		<h1>Rango says here is the about page</h1>
+		<div>This tutorial has been put together by Mahmood Khalil</div>
+		{% if visits %}
+			<h3>Visits: {{ visits }}</h3>
+		{% endif %}
+		<div>
+			<img src="{{MEDIA_URL}}cat.jpg"
+		</div>
+{% endblock %}
